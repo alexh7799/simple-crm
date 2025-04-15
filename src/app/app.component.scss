@@ -12,12 +12,14 @@
 
 .sidenav-content {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: stretch;
     justify-content: center;
+    height: 100%;
 }
 
 .sidenav {
-    width: 200px;
+    width: 250px;
     padding: 0 0 20px 0;
     border-right: 1px solid rgb(0, 0, 0, 0.2);
     border-radius: 0;
@@ -26,7 +28,7 @@
 
 .nav-icon {
     margin-right: 10px;
-    color: $color-white;
+    color: $color-font;
 }
 
 .toolbar {
@@ -36,7 +38,7 @@
     justify-content: space-between;
     padding: 0 20px;
     background-color: $color-primay;
-    color: $color-white;
+    color: $color-font;
 }
 
 .logo-container {
@@ -69,7 +71,7 @@
 .footer-content {
     display: flex;
     height: 25px;
-    padding: 5px 20px;
+    padding: 5px 30px;
     background-color: $color-accent;
     gap: 15px;
 
@@ -77,4 +79,10 @@
         margin: 0;
         font-size: 12px;
     }
+}
+
+.router-container {
+    flex: 1;
+    height: 100%;
+    padding: 20px 30px;
 }

@@ -1,0 +1,19 @@
+@import '../../styles.scss';
+
+.button-container {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  width: 100%;
+  box-shadow: none;
+}
+
+.row-hover:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}

@@ -1,6 +1,5 @@
-
 <mat-drawer-container class="container" autosize>
-  <mat-drawer #drawer class="sidenav" mode="side">
+  <mat-drawer #drawer class="sidenav" mode="side" [opened]="true">
     <div class="logo-container">
       <img src="favicon.ico" alt="Logo" class="logo" />
     </div>
@@ -17,19 +16,21 @@
   </mat-drawer>
   <div class="sidenav-content">
     <mat-toolbar class="toolbar">
-      <button mat-icon-button class="nav-icon" aria-label="Example icon-button with menu icon" (click)="drawer.toggle()">
+      <button mat-icon-button class="nav-icon" aria-label="Example icon-button with menu icon"
+        (click)="drawer.toggle()">
         <mat-icon>menu</mat-icon>
       </button>
       <span>Simple CRM</span>
       <span class="spacer"></span>
     </mat-toolbar>
-    <router-outlet/>
-  </div>
-  <footer>
-    <div class="footer-content">
-      <p>Simple CRM &copy; 2025</p>
-      <p>All rights reserved</p>
+    <div class="router-container">
+      <router-outlet />
     </div>
-  </footer>
+    <!-- <footer>
+      <div class="footer-content">
+        <p>Simple CRM &copy; 2025</p>
+        <p>All rights reserved</p>
+      </div>
+    </footer> -->
+  </div>
 </mat-drawer-container>
-
