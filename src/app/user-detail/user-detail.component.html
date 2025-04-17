@@ -1,0 +1,19 @@
+<mat-card appearance="outlined">
+    <mat-card-content>
+        <img src="favicon.ico" alt="">
+        <div>
+            <h2>{{user.firstName}} {{user.lastName}}</h2>
+            <p>Birthdate: {{user.birthDate | date:'dd.MM.yyyy'}}</p>
+        </div>
+    </mat-card-content>
+</mat-card>
+<mat-card appearance="outlined">
+    <mat-card-content>
+        <div>
+            <h3>Address</h3>
+            <p>Street: {{user.street}}</p>
+            <p>Zip Code: {{user.zipCode}}</p>
+            <p>City: {{user.city}}</p>
+        </div>
+    </mat-card-content>
+</mat-card>

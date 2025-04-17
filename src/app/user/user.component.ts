@@ -9,12 +9,13 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
 import { User } from '../../models/user.class';
+import { RouterModule } from '@angular/router';
 
 
 @Component({
   selector: 'app-user',
   standalone: true,
-  imports: [MatIcon, CommonModule, MatButtonModule, MatTooltipModule, MatCardModule, MatTableModule, DatePipe],
+  imports: [MatIcon, CommonModule, RouterModule, MatButtonModule, MatTooltipModule, MatCardModule, MatTableModule, DatePipe],
   templateUrl: './user.component.html',
   styleUrl: './user.component.scss'
 })
@@ -60,7 +61,4 @@ export class UserComponent implements OnInit {
     this.dialog.open(DialogAddUserComponent);
   }
 
-  onRowClick(row: any) {
-    console.log('Clicked row:', row.id);
-  }
 }
